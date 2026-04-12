@@ -1,3 +1,5 @@
+import requests
+
 def _read_env(env):
     body = {}
     env = env.split("\n")
