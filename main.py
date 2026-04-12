@@ -10,5 +10,5 @@ with open(".env", "r") as f:
     env = _read_env(f.read())
 
 API_ENDPOINT = env["API_ENDPOINT"]
-API_CMD = "API_CMD" + "?cmd="
+API_CMD = API_ENDPOINT + "?cmd="
 print(API_CMD)
