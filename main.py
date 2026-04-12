@@ -21,8 +21,8 @@ def out_print(*args, **kwargs):
 def cli_iter():
     def_print("Enter command: ", end="")
     cmd = input()
-
-
+    output = cli.run_cmd(cmd)
+    out_print(output, end="")
 
 def cli_main():
     success_print("This is the workout uploader CLI.")
