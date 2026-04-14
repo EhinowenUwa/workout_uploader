@@ -1,0 +1,3 @@
+This project is an API wrapper built around a command-line interface I developed to track workouts. The application sends user input to an AWS REST API Gateway, which triggers a Lambda function. The Lambda function processes the request by interacting with a remote instance of the CLI, then returns the corresponding output.
+
+On the back end, the system communicates with a PostgreSQL database to store and manage workout data. The front end is a Python-based terminal application, designed for simplicity and portability. I personally run the application using Pydroid 3, allowing me to manage workouts directly from a mobile environment.
