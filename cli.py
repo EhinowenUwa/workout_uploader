@@ -3,4 +3,5 @@ from vars import API_CMD
 from requests import get
 
 def run_cmd(cmd):
+    cmd = cmd.replace("#", "%23")
     return get(API_CMD + cmd).text
