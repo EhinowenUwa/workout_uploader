@@ -3,5 +3,5 @@ from vars import API_CMD
 from requests import get
 
 def run_cmd(cmd):
-    cmd = cmd.replace("#", "%23")
+    cmd = cmd.replace("#", "%23").replace("&", "%26").replace("^", "%5e")
     return get(API_CMD + cmd).text
